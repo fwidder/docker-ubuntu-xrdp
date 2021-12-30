@@ -4,6 +4,8 @@ LABEL maintainer="florian.widder@live.de"
 
 ADD init.sh "/usr/local/bin/init.sh"
 
+ENV DEBIAN_FRONTEND=noninteractiv
+
 RUN apt update && \
     apt upgrade --yes && \
     apt install --yes ubuntu-desktop && \
