@@ -12,3 +12,5 @@ echo "UID: $PUID"
 echo "GID: $PGID"
 
 echo -e "$PASSWORD\n$PASSWORD\n" | passwd user
+
+/usr/sbin/xrdp -n -f
